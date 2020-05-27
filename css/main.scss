@@ -185,8 +185,9 @@ li a:visited {
 /* History */
 #history {
   background: url("../img/history.png");
-  background-position: bottom;
+  background-position: 0% 1%;
   background-repeat: no-repeat;
+  background-size: cover;
   .mini-wrapper {
     background: white;
   }
@@ -233,6 +234,8 @@ li a:visited {
   }
   /* History Content */
   .history-content {
+    height: 900px;
+    margin-top: -50px;
     h1 {
       color: $muted-blue;
       &::before {
@@ -244,6 +247,37 @@ li a:visited {
         top: 25px;
       }
     }
+    p {
+      font-size: 1rem;
+      position: absolute;
+      top: 730px;
+      width: 70%;
+    }
+  }
+  .carousel {
+    background-color: $muted-blue-faded;
+    position: relative;
+    top: 350px;
+    margin: 0 auto;
+    .carousel-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0px 60px;
+      align-items: center;
+      img {
+        width: 150px;
+      }
+      .slide {
+        width: 50%;
+        padding: 20px 0px;
+      }
+    }
+  }
+}
+/* Extra Small Screens */ 
+@media screen and (max-width: 350px) {
+  body {
+    font-size: 10px;
   }
 }
 /* Large Screens */
@@ -286,6 +320,8 @@ li a:visited {
   .navbar-toggle {
     display: none;
   }
+  /* history */ 
+  
 }
 /* Hero */
 header {

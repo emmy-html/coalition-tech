@@ -155,8 +155,9 @@ li a:visited {
 /* History */
 #history {
   background: url("../img/history.png");
-  background-position: bottom;
+  background-position: 0% 1%;
   background-repeat: no-repeat;
+  background-size: cover;
   /* History Content */ }
   #history .mini-wrapper {
     background: white; }
@@ -193,16 +194,43 @@ li a:visited {
           border-bottom: 1px solid #63769d;
           color: #63769d;
           transition: 1s color, 1s border-bottom; }
-  #history .history-content h1 {
-    color: #414f6b; }
-    #history .history-content h1::before {
-      content: "01.";
-      color: rgba(65, 79, 107, 0.5);
-      font-size: 9rem;
-      position: relative;
-      left: 24px;
-      top: 25px; }
+  #history .history-content {
+    height: 900px;
+    margin-top: -50px; }
+    #history .history-content h1 {
+      color: #414f6b; }
+      #history .history-content h1::before {
+        content: "01.";
+        color: rgba(65, 79, 107, 0.5);
+        font-size: 9rem;
+        position: relative;
+        left: 24px;
+        top: 25px; }
+    #history .history-content p {
+      font-size: 1rem;
+      position: absolute;
+      top: 730px;
+      width: 70%; }
+  #history .carousel {
+    background-color: rgba(65, 79, 107, 0.5);
+    position: relative;
+    top: 350px;
+    margin: 0 auto; }
+    #history .carousel .carousel-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0px 60px;
+      align-items: center; }
+      #history .carousel .carousel-wrapper img {
+        width: 150px; }
+      #history .carousel .carousel-wrapper .slide {
+        width: 50%;
+        padding: 20px 0px; }
 
+/* Extra Small Screens */
+@media screen and (max-width: 350px) {
+  body {
+    font-size: 10px; } }
 /* Large Screens */
 @media screen and (min-width: 1200px) {
   /* Universal Styles */
@@ -241,7 +269,9 @@ li a:visited {
     margin-top: 0; }
 
   .navbar-toggle {
-    display: none; } }
+    display: none; }
+
+  /* history */ }
 /* Hero */
 header {
   background: url("../img/hero.png");
