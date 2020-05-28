@@ -257,6 +257,7 @@ li a:visited {
     font-size: 1rem; }
   #team .schedule-carousel {
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 550px; }
   #team .schedule-buttons {
@@ -277,7 +278,17 @@ li a:visited {
       color: #414f6b;
       text-decoration: underline; }
   #team .tab-content {
-    margin: 0px 60px; }
+    background: rgba(255, 255, 255, 0.75);
+    margin: 0px 60px;
+    margin-top: 100px;
+    padding: 10px 40px;
+    width: 300px; }
+    #team .tab-content h2 {
+      color: #414f6b;
+      font-size: 2.75rem;
+      line-height: .10rem; }
+    #team .tab-content p {
+      line-height: 1rem; }
 
 /* Extra Small Screens */
 @media screen and (max-width: 350px) {

@@ -103,6 +103,7 @@ $dark-blue: rgb(23, 25, 28);
 $grey: rgb(176, 180, 190);
 $light-blue: rgb(99, 118, 157);
 $dark-grey: rgb(77, 77, 77);
+$white-faded: rgba(255, 255, 255, 0.75);
 /* Style Variables */
 $transition: 1s color, 1s border-bottom;
 
@@ -161,7 +162,7 @@ li a:visited {
   width: 75%;
 }
 .main-nav li {
-  background: rgba(255, 255, 255, 0.75);
+  background: $white-faded;
   padding: 20px 0px;
   text-align: center;
   width: 100%;
@@ -311,6 +312,7 @@ li a:visited {
   /* Schedule */
   .schedule-carousel {
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
   }
@@ -337,7 +339,19 @@ li a:visited {
     }
   }
   .tab-content {
+    background: $white-faded;
     margin: 0px 60px;
+    margin-top: 100px;
+    padding: 10px 40px;
+    width: 300px;
+    h2 {
+      color: $muted-blue;
+      font-size: 2.75rem;
+      line-height: .10rem;
+    }
+    p {
+      line-height: 1rem;
+    }
   }
 }
 /* Extra Small Screens */
