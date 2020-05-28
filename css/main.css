@@ -234,7 +234,7 @@ li a:visited {
       width: 30px; }
       #history .carousel .dot-container i {
         color: white;
-        font-size: .35rem;
+        font-size: 0.35rem;
         margin-top: 15px; }
         #history .carousel .dot-container i:nth-of-type(2) {
           color: #b0b4be; }
@@ -242,6 +242,37 @@ li a:visited {
           color: #b0b4be; }
 
 /* Climb Section */
+#team {
+  /* Schedule */ }
+  #team h1 {
+    color: #414f6b; }
+    #team h1::before {
+      content: "02.";
+      color: rgba(65, 79, 107, 0.5);
+      font-size: 9rem;
+      position: relative;
+      left: 24px;
+      top: 25px; }
+  #team p {
+    font-size: 1rem; }
+  #team .schedule-buttons {
+    background: #414f6b;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px; }
+    #team .schedule-buttons a:link,
+    #team .schedule-buttons a:visited {
+      color: #b0b4be;
+      font-family: "Oswald", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 20px;
+      padding: 9.9px 20px; }
+    #team .schedule-buttons a:hover {
+      background: #b0b4be;
+      color: #414f6b;
+      text-decoration: underline; }
+
 /* Extra Small Screens */
 @media screen and (max-width: 350px) {
   body {
