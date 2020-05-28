@@ -213,20 +213,35 @@ li a:visited {
       width: 70%; }
   #history .carousel {
     background-color: rgba(65, 79, 107, 0.5);
-    position: relative;
-    top: 350px;
-    margin: 0 auto; }
-    #history .carousel .carousel-wrapper {
+    height: 200px;
+    margin-top: 500px; }
+    #history .carousel .content-wrapper {
       display: flex;
-      flex-flow: row wrap;
-      margin: 0px 60px;
-      align-items: center; }
-      #history .carousel .carousel-wrapper img {
-        width: 150px; }
-      #history .carousel .carousel-wrapper .slide {
-        width: 50%;
-        padding: 20px 0px; }
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      width: auto;
+      padding-top: 75px; }
+      #history .carousel .content-wrapper .slide {
+        width: 90px; }
+      #history .carousel .content-wrapper img {
+        width: 100%; }
+    #history .carousel .dot-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 30px; }
+      #history .carousel .dot-container i {
+        color: white;
+        font-size: .35rem;
+        margin-top: 15px; }
+        #history .carousel .dot-container i:nth-of-type(2) {
+          color: #b0b4be; }
+        #history .carousel .dot-container i:nth-of-type(3) {
+          color: #b0b4be; }
 
+/* Climb Section */
 /* Extra Small Screens */
 @media screen and (max-width: 350px) {
   body {

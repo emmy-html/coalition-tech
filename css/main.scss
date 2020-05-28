@@ -256,24 +256,44 @@ li a:visited {
   }
   .carousel {
     background-color: $muted-blue-faded;
-    position: relative;
-    top: 350px;
-    margin: 0 auto;
-    .carousel-wrapper {
-      display: flex;
-      flex-flow: row wrap;
-      margin: 0px 60px;
-      align-items: center;
-      img {
-        width: 150px;
-      }
+    height: 200px;
+    margin-top: 500px;
+      .content-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        padding-top: 75px;
       .slide {
-        width: 50%;
-        padding: 20px 0px;
+        width: 90px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .dot-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 30px;
+      i {
+        color: white;
+        font-size: .35rem;
+        margin-top: 15px;
+        &:nth-of-type(2) {
+          color: $grey;
+        }
+        &:nth-of-type(3) {
+          color: $grey;
+        }
       }
     }
   }
 }
+/* Climb Section */
+
 /* Extra Small Screens */ 
 @media screen and (max-width: 350px) {
   body {
