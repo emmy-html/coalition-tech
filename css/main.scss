@@ -183,6 +183,13 @@ li a:visited {
 #chkToggle:checked + ul.main-nav {
   display: block;
 }
+/* Hero */
+header {
+  background: url("../img/hero.png");
+  background-size: cover;
+  background-position: center top;
+  height: 500px;
+}
 /* History */
 #history {
   background: url("../img/history.png");
@@ -204,6 +211,7 @@ li a:visited {
         padding-left: 10px;
         span {
           color: $muted-blue;
+          font-size: 1.47rem;
           display: block;
         }
       }
@@ -343,7 +351,7 @@ li a:visited {
     margin: 0px 60px;
     margin-top: 100px;
     padding: 10px 40px;
-    width: 300px;
+    width: auto;
     h2 {
       color: $muted-blue;
       font-size: 2.75rem;
@@ -354,6 +362,38 @@ li a:visited {
     }
   }
 }
+/* Footer */ 
+footer {
+  background: $muted-blue;
+  font-size: .75rem;
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    h2 {
+      color: $light-blue;
+      font-size: 1.3rem;
+      line-height: 1.15rem;
+      padding-left: 10px;
+      span {
+        font-size: 1.47rem;
+        display: block;
+      }
+    }
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $light-blue;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
 /* Extra Small Screens */
 @media screen and (max-width: 350px) {
   body {
@@ -361,7 +401,7 @@ li a:visited {
   }
 }
 /* Large Screens */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   /* Universal Styles */
   .content-wrapper {
     margin: 0px 320px;
@@ -393,6 +433,16 @@ li a:visited {
   }
   .nav-links {
     margin-left: 40px;
+    &:link,
+    &:visited {
+      border-bottom: 1px solid white;
+      color: white;
+    }
+    &:hover {
+      border-bottom: 1px solid $dark-blue;
+      color: $dark-blue;
+      transition: $transition;
+    }
   }
   .logo {
     margin-top: 0;
@@ -400,15 +450,18 @@ li a:visited {
   .navbar-toggle {
     display: none;
   }
-  /* history */
+  /* Hero */
+  header {
+    height: 700px;
+  }
+  /* History */
+  #history {
+    .mini-nav {
+      margin: 0px 320px;
+    }
+  }
 }
-/* Hero */
-header {
-  background: url("../img/hero.png");
-  background-size: cover;
-  background-position: center top;
-  height: 500px;
-}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

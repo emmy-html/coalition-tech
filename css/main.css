@@ -152,6 +152,13 @@ li a:visited {
 #chkToggle:checked + ul.main-nav {
   display: block; }
 
+/* Hero */
+header {
+  background: url("../img/hero.png");
+  background-size: cover;
+  background-position: center top;
+  height: 500px; }
+
 /* History */
 #history {
   background: url("../img/history.png");
@@ -179,6 +186,7 @@ li a:visited {
         padding-left: 10px; }
         #history .mini-nav .body-logo h2 span {
           color: #414f6b;
+          font-size: 1.47rem;
           display: block; }
     #history .mini-nav ul {
       list-style: none; }
@@ -282,7 +290,7 @@ li a:visited {
     margin: 0px 60px;
     margin-top: 100px;
     padding: 10px 40px;
-    width: 300px; }
+    width: auto; }
     #team .tab-content h2 {
       color: #414f6b;
       font-size: 2.75rem;
@@ -290,12 +298,39 @@ li a:visited {
     #team .tab-content p {
       line-height: 1rem; }
 
+/* Footer */
+footer {
+  background: #414f6b;
+  font-size: .75rem; }
+  footer .footer-logo {
+    display: flex;
+    align-items: center; }
+    footer .footer-logo h2 {
+      color: #63769d;
+      font-size: 1.3rem;
+      line-height: 1.15rem;
+      padding-left: 10px; }
+      footer .footer-logo h2 span {
+        font-size: 1.47rem;
+        display: block; }
+  footer .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .content-wrapper p {
+      color: #63769d;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      text-align: center; }
+
 /* Extra Small Screens */
 @media screen and (max-width: 350px) {
   body {
     font-size: 10px; } }
 /* Large Screens */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   /* Universal Styles */
   .content-wrapper {
     margin: 0px 320px; }
@@ -327,6 +362,13 @@ li a:visited {
 
   .nav-links {
     margin-left: 40px; }
+    .nav-links:link, .nav-links:visited {
+      border-bottom: 1px solid white;
+      color: white; }
+    .nav-links:hover {
+      border-bottom: 1px solid #17191c;
+      color: #17191c;
+      transition: 1s color, 1s border-bottom; }
 
   .logo {
     margin-top: 0; }
@@ -334,14 +376,13 @@ li a:visited {
   .navbar-toggle {
     display: none; }
 
-  /* history */ }
-/* Hero */
-header {
-  background: url("../img/hero.png");
-  background-size: cover;
-  background-position: center top;
-  height: 500px; }
+  /* Hero */
+  header {
+    height: 700px; }
 
+  /* History */
+  #history .mini-nav {
+    margin: 0px 320px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
