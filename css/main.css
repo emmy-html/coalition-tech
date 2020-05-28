@@ -294,14 +294,14 @@ header {
     #team .tab-content h2 {
       color: #414f6b;
       font-size: 2.75rem;
-      line-height: .10rem; }
+      line-height: 0.1rem; }
     #team .tab-content p {
       line-height: 1rem; }
 
 /* Footer */
 footer {
   background: #414f6b;
-  font-size: .75rem; }
+  font-size: 0.75rem; }
   footer .footer-logo {
     display: flex;
     align-items: center; }
@@ -330,7 +330,7 @@ footer {
   body {
     font-size: 10px; } }
 /* Large Screens */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   /* Universal Styles */
   .content-wrapper {
     margin: 0px 320px; }
@@ -382,7 +382,36 @@ footer {
 
   /* History */
   #history .mini-nav {
-    margin: 0px 320px; } }
+    margin: 0px 320px; }
+  #history .history-content p {
+    top: 930px;
+    left: 410px;
+    width: 50%; }
+  #history .carousel .content-wrapper {
+    padding-top: 50px; }
+    #history .carousel .content-wrapper .slide {
+      width: 23%; }
+
+  /* Team */
+  #team .content-wrapper.initial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin-top: -25px; }
+    #team .content-wrapper.initial p {
+      margin-left: 25px;
+      padding-top: 25px; }
+  #team .tab-content {
+    margin: 0px 320px;
+    margin-top: 100px;
+    width: 300px; }
+
+  /* Footer */
+  footer .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
