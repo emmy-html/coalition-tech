@@ -309,6 +309,11 @@ li a:visited {
     font-size: 1rem;
   }
   /* Schedule */
+  .schedule-carousel {
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+  }
   .schedule-buttons {
     background: $muted-blue;
     display: flex;
@@ -332,7 +337,7 @@ li a:visited {
     }
   }
   .tab-content {
-    display: none;
+    margin: 0px 60px;
   }
 }
 /* Extra Small Screens */

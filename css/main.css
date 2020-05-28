@@ -255,6 +255,10 @@ li a:visited {
       top: 25px; }
   #team p {
     font-size: 1rem; }
+  #team .schedule-carousel {
+    background-position: center;
+    background-size: cover;
+    height: 550px; }
   #team .schedule-buttons {
     background: #414f6b;
     display: flex;
@@ -273,7 +277,7 @@ li a:visited {
       color: #414f6b;
       text-decoration: underline; }
   #team .tab-content {
-    display: none; }
+    margin: 0px 60px; }
 
 /* Extra Small Screens */
 @media screen and (max-width: 350px) {
