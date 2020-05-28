@@ -1,19 +1,14 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function openTab(tabName, elmnt) {
+    // hide all tabs by default
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    // show the specified tab content
+    document.getElementById(tabName).style.display = "inherit";
 }
 
+// get the element with id="defaultOpen" and click on it
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("schedule-slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "inherit";
-}
+document.getElementById("defaultOpen").click();

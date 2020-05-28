@@ -92,18 +92,18 @@
         <div class="schedule-carousel">
           <div class="schedule-buttons">
             <div class="content-wrapper">
-              <a onclick="plusSlides(-1)">Mountain 1</a>
-              <a onclick="plusSlides(1)">Mountain 2</a>
+              <button onclick="openTab('schedule-one', this)" id="defaultOpen">Mountain 1</button>
+              <button onclick="openTab('schedule-two', this)">Mountain 2</button>
             </div>
           </div>
-          <div class="schedule-slide">
+          <div class="tab-content" id="schedule-one">
             <h2>Schedule</h2>
             <p>25 Nov 2016 Vestibulum viverra</p>
             <p>28 Nov 2016 Vestibulum viverra</p>
             <p>18 Dec 2016 Vestibulum viverra</p>
             <p>7 Jan 2017 Vestibulum viverra</p>
           </div>
-          <div class="schedule-slide">
+          <div class="tab-content" id="schedule-two">
             <h2>#2 Schedule</h2>
             <p>17 Nov 2016 Vestibulum viverra</p>
             <p>13 Dec 2016 Vestibulum viverra</p>

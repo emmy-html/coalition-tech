@@ -308,26 +308,31 @@ li a:visited {
   p {
     font-size: 1rem;
   }
-  /* Schedule */ 
+  /* Schedule */
   .schedule-buttons {
     background: $muted-blue;
     display: flex;
     align-items: center;
-    padding: 10px 0px;
-    a:link,
-    a:visited {
-      color: $grey;
-      font-family: $secondary-heading;
-      font-weight: 500;
-      text-transform: uppercase;
-      margin-right: 20px;  
-      padding: 9.9px 20px;   
+    .content-wrapper {
+      button {
+        background: $muted-blue;
+        border: none;
+        color: $grey;
+        font-family: $secondary-heading;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-right: 20px;
+        padding: 9.9px 20px;
+      }
+      button:hover {
+        background: $grey;
+        color: $muted-blue;
+        text-decoration: underline;
+      }
     }
-    a:hover {
-      background: $grey;
-      color: $muted-blue;
-      text-decoration: underline;
-    }
+  }
+  .tab-content {
+    display: none;
   }
 }
 /* Extra Small Screens */

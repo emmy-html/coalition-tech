@@ -258,20 +258,22 @@ li a:visited {
   #team .schedule-buttons {
     background: #414f6b;
     display: flex;
-    align-items: center;
-    padding: 10px 0px; }
-    #team .schedule-buttons a:link,
-    #team .schedule-buttons a:visited {
+    align-items: center; }
+    #team .schedule-buttons .content-wrapper button {
+      background: #414f6b;
+      border: none;
       color: #b0b4be;
       font-family: "Oswald", sans-serif;
       font-weight: 500;
       text-transform: uppercase;
       margin-right: 20px;
       padding: 9.9px 20px; }
-    #team .schedule-buttons a:hover {
+    #team .schedule-buttons .content-wrapper button:hover {
       background: #b0b4be;
       color: #414f6b;
       text-decoration: underline; }
+  #team .tab-content {
+    display: none; }
 
 /* Extra Small Screens */
 @media screen and (max-width: 350px) {
